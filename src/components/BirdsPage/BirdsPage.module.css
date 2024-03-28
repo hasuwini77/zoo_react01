@@ -1,0 +1,12 @@
+.birdsPage {
+  display: flex;
+  height: 100%;
+}
+
+.birdsPage > .sidebar {
+  flex: 0 0 200px;
+}
+
+.birdsPage > .mainContent {
+  flex-grow: 1;
+}

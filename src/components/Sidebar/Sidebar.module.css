@@ -1,0 +1,11 @@
+.sidebar {
+  width: 200px;
+  background-color: #832583;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 130px;
+  }
+}

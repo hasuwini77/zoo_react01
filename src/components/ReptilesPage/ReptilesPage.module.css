@@ -1,0 +1,12 @@
+.reptilesPage {
+  display: flex;
+  height: 100%;
+}
+
+.reptilesPage > .sidebar {
+  flex: 0 0 200px;
+}
+
+.reptilesPage > .mainContent {
+  flex-grow: 1;
+}

@@ -1,0 +1,12 @@
+.mammalsPage {
+  display: flex;
+  height: 100%;
+}
+
+.mammalsPage > .sidebar {
+  flex: 0 0 200px;
+}
+
+.mammalsPage > .mainContent {
+  flex-grow: 1;
+}
