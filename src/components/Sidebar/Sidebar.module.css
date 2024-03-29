@@ -1,7 +1,8 @@
 .sidebar {
   width: 200px;
-  background-color: #832583;
+  background-color: #5f1f5e;
   height: 100%;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {

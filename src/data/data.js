@@ -258,4 +258,12 @@ const yellowTailedBlackCockatoo = new Animal(
   "18"
 );
 
-let arrayOfAnimals = [frillNeckedLizard, blueTongued, taipanSnake, frilledDragon, stimsonPython, goanna, cassowary, echidna, wallabies, tasmanian_Devil, koala, kookaburra, lorikeet, emu, hawksbillTurtle, quokka, perentie, yellowTailedBlackCockatoo];
+export const arrayOfAnimals = [frillNeckedLizard, blueTongued, taipanSnake, frilledDragon, stimsonPython, goanna, cassowary, echidna, wallabies, tasmanian_Devil, koala, kookaburra, lorikeet, emu, hawksbillTurtle, quokka, perentie, yellowTailedBlackCockatoo];
+
+export const arrayOfBirds = arrayOfAnimals.filter((animal) => animal.group === "birds");
+export const arrayOfReptiles = arrayOfAnimals.filter((animal) => animal.group === "reptiles");
+export const arrayOfMammals = arrayOfAnimals.filter((animal) => animal.group === "mammals");
+
+console.log(arrayOfBirds);
+console.log(arrayOfReptiles);
+console.log(arrayOfMammals);
