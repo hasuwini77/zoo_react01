@@ -12,10 +12,16 @@ import { arrayOfAnimals, arrayOfBirds, arrayOfMammals, arrayOfReptiles } from ".
 
 function App() {
   const [animalDisplayed, setAnimalDisplayed] = useState(arrayOfAnimals);
-  const [userHasClicked, setUserHasClicked] = useState(false);
+  const [userHasClicked, setUserHasClicked] = useState(null);
+  const [currentAnimal, setCurrentAnimal] = useState(null);
 
-  const handleUserClick = () => {
-    setUserHasClicked((prevState) => !prevState);
+  const handleUserClick = (animalName) => {
+    setUserHasClicked((prevState) => (prevState === animalName ? null : animalName));
+  };
+
+  const updateAnimal = (animalName) => {
+    const selectedAnimal = animalDisplayed.find((animal) => animal.name === animalName);
+    setCurrentAnimal(selectedAnimal);
   };
 
   return (
@@ -23,7 +29,7 @@ function App() {
       <Header img={"logo-green.png"} />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<MainPage animalList={animalDisplayed} userHasClicked={userHasClicked} handleUserClick={handleUserClick} />} />
+          <Route path="/" element={<MainPage animalList={animalDisplayed} userHasClicked={userHasClicked} handleUserClick={handleUserClick} updateAnimal={updateAnimal} currentAnimal={currentAnimal} />} />
           <Route path="/mammals" element={<MammalsPage animalDisplayed={arrayOfMammals} userHasClicked={userHasClicked} />} />
           <Route path="/reptiles" element={<ReptilesPage animalDisplayed={arrayOfReptiles} userHasClicked={userHasClicked} />} />
           <Route path="/birds" element={<BirdsPage animalDisplayed={arrayOfBirds} userHasClicked={userHasClicked} />} />

@@ -3,8 +3,8 @@ import styles from "./Sidebar.module.css";
 
 const Sidebar = ({ animalList, handleUserClick, updateAnimal }) => {
   const handleClick = (animalName) => {
-    handleUserClick();
-    updateAnimal(animalName); //
+    handleUserClick(animalName);
+    updateAnimal(animalName);
   };
 
   return (
