@@ -5,6 +5,14 @@
   color: white;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  margin: 0;
+}
 @media only screen and (max-width: 768px) {
   .sidebar {
     width: 130px;

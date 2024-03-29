@@ -3,11 +3,11 @@ import styles from "./MainPage.module.css";
 import Sidebar from "../Sidebar";
 import MainContent from "../MainContent";
 
-const MainPage = ({ animalList }) => {
+const MainPage = ({ animalList, userHasClicked, handleUserClick }) => {
   return (
     <div className={styles.mainPage}>
-      <Sidebar animalList={animalList} />
-      <MainContent />
+      <Sidebar animalList={animalList} userHasClicked={userHasClicked} handleUserClick={handleUserClick} />
+      <MainContent userHasClicked={userHasClicked} handleUserClick={handleUserClick} />
     </div>
   );
 };
