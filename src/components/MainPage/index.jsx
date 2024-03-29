@@ -7,7 +7,7 @@ const MainPage = ({ animalList, userHasClicked, handleUserClick }) => {
   return (
     <div className={styles.mainPage}>
       <Sidebar animalList={animalList} userHasClicked={userHasClicked} handleUserClick={handleUserClick} />
-      <MainContent userHasClicked={userHasClicked} handleUserClick={handleUserClick} />
+      <MainContent userHasClicked={userHasClicked} />
     </div>
   );
 };
