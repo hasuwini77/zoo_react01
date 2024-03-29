@@ -3,11 +3,11 @@ import BirdsContent from "../BirdsContent";
 import Sidebar from "../Sidebar";
 import styles from "./BirdsPage.module.css";
 
-const BirdsPage = () => {
+const BirdsPage = ({ animalDisplayed }) => {
   return (
     <>
       <div className={styles.birdsPage}>
-        <Sidebar />
+        <Sidebar animalList={animalDisplayed} />
         <BirdsContent />
       </div>
     </>

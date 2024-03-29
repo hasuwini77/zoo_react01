@@ -263,7 +263,3 @@ export const arrayOfAnimals = [frillNeckedLizard, blueTongued, taipanSnake, fril
 export const arrayOfBirds = arrayOfAnimals.filter((animal) => animal.group === "birds");
 export const arrayOfReptiles = arrayOfAnimals.filter((animal) => animal.group === "reptiles");
 export const arrayOfMammals = arrayOfAnimals.filter((animal) => animal.group === "mammals");
-
-console.log(arrayOfBirds);
-console.log(arrayOfReptiles);
-console.log(arrayOfMammals);

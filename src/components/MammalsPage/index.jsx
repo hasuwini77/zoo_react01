@@ -3,11 +3,11 @@ import MammalsContent from "../MammalsContent";
 import Sidebar from "../Sidebar";
 import styles from "./MammalsPage.module.css";
 
-const MammalsPage = () => {
+const MammalsPage = ({ animalDisplayed }) => {
   return (
     <>
       <div className={styles.mammalsPage}>
-        <Sidebar />
+        <Sidebar animalList={animalDisplayed} />
         <MammalsContent />
       </div>
     </>

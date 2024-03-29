@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Layout from "./pages/Layout";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import { arrayOfAnimals } from "./data/data";
+import { arrayOfAnimals, arrayOfBirds, arrayOfMammals, arrayOfReptiles } from "./data/data";
 
 function App() {
   const [animalDisplayed, setAnimalDisplayed] = useState(arrayOfAnimals);
@@ -19,9 +19,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<MainPage animalList={animalDisplayed} />} />
-          <Route path="/mammals" element={<MammalsPage />} />
-          <Route path="/reptiles" element={<ReptilesPage />} />
-          <Route path="/birds" element={<BirdsPage />} />
+          <Route path="/mammals" element={<MammalsPage animalDisplayed={arrayOfMammals} />} />
+          <Route path="/reptiles" element={<ReptilesPage animalDisplayed={arrayOfReptiles} />} />
+          <Route path="/birds" element={<BirdsPage animalDisplayed={arrayOfBirds} />} />
         </Route>
       </Routes>
       <Footer />
