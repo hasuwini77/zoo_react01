@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
 
-const Sidebar = ({ animalList, handleUserClick }) => {
-  const handleClick = () => {
+const Sidebar = ({ animalList, handleUserClick, updateAnimal }) => {
+  const handleClick = (animalName) => {
     handleUserClick();
+    updateAnimal(animalName); //
   };
 
   return (
@@ -11,7 +12,7 @@ const Sidebar = ({ animalList, handleUserClick }) => {
       <ul>
         {Array.isArray(animalList) ? (
           animalList.map((animal, index) => (
-            <li key={index} onClick={handleClick}>
+            <li key={index} onClick={() => handleClick(animal.name)}>
               {animal.name}
             </li>
           ))
