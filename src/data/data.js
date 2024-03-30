@@ -107,6 +107,7 @@ const cassowary = new Animal(
   "Cassowary.jpg",
   "Cassowary.jpg",
   "birds",
+  "birds",
   "7"
 );
 
@@ -119,6 +120,7 @@ const echidna = new Animal(
   "10 kg",
   "Echidna.jpg",
   "Echidna.jpg",
+  "mammals",
   "mammals",
   "8"
 );
@@ -169,7 +171,7 @@ const kookaburra = new Animal(
   "45cm",
   "0.5kg",
   "Eastern Australia",
-  "/img/kookaburra-small.jpeg",
+  "Kookaburra-small-jpg.jpeg",
   "/img/kookaburra-big.jpeg",
   "birds",
   "12"
@@ -182,7 +184,7 @@ const lorikeet = new Animal(
   "30cm",
   "0.15kg",
   "Various regions in Australia",
-  "/img/lorikeet-small.jpeg",
+  "rainbowlorikeet-small.jpg",
   "/img/lorikeet-big.jpeg",
   "birds",
   "13"
@@ -196,7 +198,7 @@ const emu = new Animal(
   "1.9m",
   "36kg",
   "Throughout Australia",
-  "/img/emu-small.jpeg",
+  "emu-small-jpg.jpeg",
   "/img/emu-big.jpeg",
   "birds",
   "14"
@@ -210,7 +212,7 @@ const hawksbillTurtle = new Animal(
   "80cm (carapace)",
   "50kg",
   "Tropical coasts of Queensland, Northern Territory and Western Australia",
-  "hawksbill-turtle-small.jpeg",
+  "Hawksbill-turtle-small-jpg.jpeg",
   "hawksbill-turtle-big.jpeg",
   "reptiles",
   "15"
@@ -224,7 +226,7 @@ const quokka = new Animal(
   "50cm",
   "3kg",
   "Only found on Rottnest Island and a few places on mainland Western Australia",
-  "quokka-small.jpeg",
+  "Quokka-small.jpg",
   "quokka-big.jpeg",
   "mammals",
   "16"
@@ -238,7 +240,7 @@ const perentie = new Animal(
   "2.5 m",
   "20kg",
   "Deserts",
-  "perentie-small.jpeg",
+  "Perentie-small.jpg",
   "perentie-big.jpeg",
   "reptiles",
   "17"
@@ -252,7 +254,7 @@ const yellowTailedBlackCockatoo = new Animal(
   "65 cm",
   "900 grams",
   "SE Australia",
-  "yellow-tailed-black-cockatoo-small.jpeg",
+  "Yellow-tailed-black-cockatoo-small-jpg.jpeg",
   "yellow-tailed-black-cockatoo-big.jpeg",
   "birds",
   "18"

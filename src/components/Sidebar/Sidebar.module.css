@@ -1,5 +1,6 @@
 .sidebar {
   width: 200px;
+  min-width: 200px;
   background-color: #5f1f5e;
   height: 100%;
   color: white;
@@ -12,6 +13,7 @@ ul {
 li {
   padding: 10px;
   margin: 0;
+  cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
   .sidebar {

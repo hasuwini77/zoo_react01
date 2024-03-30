@@ -27,10 +27,21 @@ button {
   border-radius: 17px;
   margin: 10px;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .buttonContainer {
   display: flex;
   flex-direction: row;
   padding: 2px;
+}
+
+.description {
+  max-width: 60%;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+.description p {
+  padding: 10px;
 }
