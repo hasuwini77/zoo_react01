@@ -21,8 +21,8 @@ const frillNeckedLizard = new Animal(
   "90cm",
   "1kg",
   "Northern Australia",
-  "./img/frilled-lizard-small.jpeg",
-  "./img/frilled-lizard-big.jpeg",
+  "frilled-lizard-small.jpeg",
+  "frilled-lizard-big.jpeg",
   "reptiles",
   "1"
 );
@@ -35,8 +35,8 @@ const blueTongued = new Animal(
   "50cm",
   "0.5kg",
   "Eastern Australia",
-  "./img/blue-tongue-small.jpeg",
-  "./img/blue-thong-big.jpeg",
+  "blue-tongue-small.jpeg",
+  "blue-thong-big.jpeg",
   "reptiles",
   "2"
 );
@@ -49,8 +49,8 @@ const taipanSnake = new Animal(
   "200cm",
   "3kg",
   "Central Australia",
-  "./img/taipan-snake-small.jpeg",
-  "./img/taipan-snake-big.jpeg",
+  "taipan-snake-small.jpeg",
+  "taipan-snake-big.jpeg",
   "reptiles",
   "3"
 );
@@ -63,8 +63,8 @@ const frilledDragon = new Animal(
   "70cm",
   "0.7kg",
   "Northern Australia",
-  "./img/frilled-dragon-small.jpeg",
-  "./img/frilled-dragon-big.jpeg",
+  "frilled-dragon-small.jpeg",
+  "frilled-dragon-big.jpeg",
   "reptiles",
   "4"
 );
@@ -77,8 +77,8 @@ const stimsonPython = new Animal(
   "120cm",
   "2kg",
   "Southern Australia",
-  "./img/stimson-small.jpeg",
-  "./img/stimson-big.jpeg",
+  "stimson-small.jpeg",
+  "stimson-big.jpeg",
   "reptiles",
   "5"
 );
@@ -91,8 +91,8 @@ const goanna = new Animal(
   "150cm",
   "5kg",
   "Various regions in Australia",
-  "./img/goana-small.jpeg",
-  "./img/goanna-big.jpeg",
+  "goana-small.jpeg",
+  "goanna-big.jpeg",
   "reptiles",
   "6"
 );
@@ -104,8 +104,8 @@ const cassowary = new Animal(
   "It’s not hard to imagine that cassowaries are descended from dinosaur ancestors. The largest cassowaries can stand as high as six feet and weigh up to 160 pounds.   These large birds cannot fly, but their extremely powerful legs propel them at great speeds. They are strong swimmers and can move quickly on both land and water. Cassowaries are shy and they are usually hard to spot, at least in their natural rain forest habitats. They are not overly aggressive, and attacks are rare. But they can do a lot of damage if they are provoked or angered. Cassowary attacks have occasionally been deadly, including a recent one which occurred in 2019, at a private collection of caged birds in Florida",
   "1.7 m",
   "44 kg",
-  "./img/Cassowary.jpg",
-  "./img/Cassowary.jpg",
+  "Cassowary.jpg",
+  "Cassowary.jpg",
   "birds",
   "7"
 );
@@ -117,8 +117,8 @@ const echidna = new Animal(
   "Echidnas, also called spiny anteaters, are walking contradictions. They are mammals, but they lay eggs. They are often classified as long- or sort-beaked, but don't have beaks at all, in the traditional sense; they have fleshy noses that can be either on the long side or rather short. They don't really look like true anteaters (Myrmecophaga tridactyla), either, and they are not closely related to them. They are spiny, though; their bodies are covered with hollow, barbless quills. Echidnas are monotremes, egg-laying mammals. The only other living monotreme is the platypus.",
   "76 cm",
   "10 kg",
-  "./img/Echidna.jpg",
-  "./img/Echidna.jpg",
+  "Echidna.jpg",
+  "Echidna.jpg",
   "mammals",
   "8"
 );
@@ -130,8 +130,8 @@ const wallabies = new Animal(
   "12 to 41 inches; tail: 10 to 29 inches",
   "4 to 53 pounds",
   "mountain habitats in isolated portions of Australia.",
-  "./img/Wallabies.jpg",
-  "./img/Wallabies.jpg",
+  "Wallabies.jpg",
+  "Wallabies.jpg",
   "mammals",
   "9"
 );
@@ -143,8 +143,8 @@ const tasmanian_Devil = new Animal(
   "20 to 31 inches",
   "9 to 26pounds",
   "south of Australia.",
-  "./img/Tasmanian-Devil.jpg",
-  "./img/Tasmanian-Devil.jpg",
+  "Tasmanian-Devil.jpg",
+  "Tasmanian-Devil.jpg",
   "mammals",
   "10"
 );
@@ -156,8 +156,8 @@ const koala = new Animal(
   "23.5 to 33.5 inches",
   " 20 pounds",
   "the eucalyptus forests of southeastern and eastern Australia",
-  "./img/koala.jpg",
-  "./img/koala.jpg",
+  "koala.jpg",
+  "koala.jpg",
   "mammals",
   "11"
 );
@@ -210,8 +210,8 @@ const hawksbillTurtle = new Animal(
   "80cm (carapace)",
   "50kg",
   "Tropical coasts of Queensland, Northern Territory and Western Australia",
-  "./img/hawksbill-turtle-small.jpeg",
-  "./img/hawksbill-turtle-big.jpeg",
+  "hawksbill-turtle-small.jpeg",
+  "hawksbill-turtle-big.jpeg",
   "reptiles",
   "15"
 );
@@ -224,8 +224,8 @@ const quokka = new Animal(
   "50cm",
   "3kg",
   "Only found on Rottnest Island and a few places on mainland Western Australia",
-  "./img/quokka-small.jpeg",
-  "./img/quokka-big.jpeg",
+  "quokka-small.jpeg",
+  "quokka-big.jpeg",
   "mammals",
   "16"
 );
@@ -238,8 +238,8 @@ const perentie = new Animal(
   "2.5 m",
   "20kg",
   "Deserts",
-  "./img/perentie-small.jpeg",
-  "./img/perentie-big.jpeg",
+  "perentie-small.jpeg",
+  "perentie-big.jpeg",
   "reptiles",
   "17"
 );
@@ -252,8 +252,8 @@ const yellowTailedBlackCockatoo = new Animal(
   "65 cm",
   "900 grams",
   "SE Australia",
-  "./img/yellow-tailed-black-cockatoo-small.jpeg",
-  "./img/yellow-tailed-black-cockatoo-big.jpeg",
+  "yellow-tailed-black-cockatoo-small.jpeg",
+  "yellow-tailed-black-cockatoo-big.jpeg",
   "birds",
   "18"
 );

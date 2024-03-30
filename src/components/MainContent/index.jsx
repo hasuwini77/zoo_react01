@@ -3,17 +3,24 @@ import styles from "./MainContent.module.css";
 import { getImageURL } from "../../utils/functions";
 
 const MainContent = ({ userHasClicked, currentAnimal }) => {
+  const handleImageError = () => {
+    console.log("Image not found!");
+  };
+
   return (
     <div className={styles.mainContent}>
-      {!userHasClicked && <p> Welcome On Board homie!</p>}
+      {!userHasClicked && <h1> Welcome On Board homie!</h1>}
       {userHasClicked && currentAnimal && (
         <>
           <div className={styles.activeAnimal}>
-            <img src={getImageURL(currentAnimal.img)} alt={currentAnimal.img} />
+            <img className={styles.contentImg} src={getImageURL(currentAnimal.smallimg)} alt={currentAnimal.img} onError={handleImageError} />
             <h1 className={styles.title}> {currentAnimal.name}</h1>
             <p className={styles.description}> {currentAnimal.description}</p>
-            <p className={styles.food}> {currentAnimal.food} </p>
-            <p>Lifespan: {currentAnimal.lifespan}</p>
+            <p className={styles.food}>Usually eats: {currentAnimal.food} </p>
+            <div className={styles.buttonContainer}>
+              <button> {currentAnimal.group} </button>
+              <button> Read More </button>
+            </div>
           </div>
         </>
       )}
