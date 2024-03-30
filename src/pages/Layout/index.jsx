@@ -1,12 +1,19 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import styles from "./Layout.module.css";
 
-const Layout = () => {
+const Layout = ({ setUserHasClicked }) => {
+  const location = useLocation();
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      setUserHasClicked(null);
+    }
+  };
+
   return (
     <>
       <div className={styles.navbar}>
-        <NavLink className={`${styles.link} ${styles.active}`} to="/">
+        <NavLink className={`${styles.link} ${styles.active}`} to="/" onClick={handleHomeClick}>
           Home
         </NavLink>
         <NavLink className={`${styles.link} ${styles.active}`} to="/mammals">

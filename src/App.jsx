@@ -28,7 +28,7 @@ function App() {
     <>
       <Header img={"logo-green.png"} />
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<Layout setUserHasClicked={setUserHasClicked} />}>
           <Route path="/" element={<MainPage animalList={animalDisplayed} userHasClicked={userHasClicked} handleUserClick={handleUserClick} updateAnimal={updateAnimal} currentAnimal={currentAnimal} />} />
           <Route path="/mammals" element={<MammalsPage animalDisplayed={arrayOfMammals} userHasClicked={userHasClicked} />} />
           <Route path="/reptiles" element={<ReptilesPage animalDisplayed={arrayOfReptiles} userHasClicked={userHasClicked} />} />
