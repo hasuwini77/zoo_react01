@@ -5,7 +5,7 @@ const Footer = () => {
   let currentYear = new Date().getFullYear();
   return (
     <div className={styles.footer}>
-      <p>Copyright ®{currentYear}</p>
+      <p>Copyright ® {currentYear}</p>
     </div>
   );
 };

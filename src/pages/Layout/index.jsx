@@ -1,28 +1,26 @@
 import React from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import styles from "./Layout.module.css";
 
 const Layout = ({ setUserHasClicked }) => {
-  const location = useLocation();
-  const handleHomeClick = () => {
-    if (location.pathname === "/") {
-      setUserHasClicked(null);
-    }
+  const handleCategoryClick = () => {
+    // Reset the current animal detail state
+    setUserHasClicked(null);
   };
 
   return (
     <>
       <div className={styles.navbar}>
-        <NavLink className={`${styles.link} ${styles.active}`} to="/" onClick={handleHomeClick}>
+        <NavLink className={`${styles.link} ${styles.active}`} to="/" onClick={handleCategoryClick}>
           Home
         </NavLink>
-        <NavLink className={`${styles.link} ${styles.active}`} to="/mammals">
+        <NavLink className={`${styles.link} ${styles.active}`} to="/mammals" onClick={handleCategoryClick}>
           Mammals
         </NavLink>
-        <NavLink className={`${styles.link} ${styles.active}`} to="/birds">
+        <NavLink className={`${styles.link} ${styles.active}`} to="/birds" onClick={handleCategoryClick}>
           Birds
         </NavLink>
-        <NavLink className={`${styles.link} ${styles.active}`} to="/reptiles">
+        <NavLink className={`${styles.link} ${styles.active}`} to="/reptiles" onClick={handleCategoryClick}>
           Reptiles
         </NavLink>
       </div>
