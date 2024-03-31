@@ -3,12 +3,12 @@ import BirdsContent from "../BirdsContent";
 import Sidebar from "../Sidebar";
 import styles from "./BirdsPage.module.css";
 
-const BirdsPage = ({ animalDisplayed }) => {
+const BirdsPage = ({ animalDisplayed, userHasClicked, handleUserClick, updateAnimal, currentAnimal }) => {
   return (
     <>
       <div className={styles.birdsPage}>
-        <Sidebar animalList={animalDisplayed} />
-        <BirdsContent />
+        <Sidebar animalList={animalDisplayed} userHasClicked={userHasClicked} handleUserClick={handleUserClick} updateAnimal={updateAnimal} />
+        <BirdsContent userHasClicked={userHasClicked} currentAnimal={currentAnimal} />
       </div>
     </>
   );
