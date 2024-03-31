@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "./MainPage.module.css";
 import Sidebar from "../Sidebar";
 import MainContent from "../MainContent";
