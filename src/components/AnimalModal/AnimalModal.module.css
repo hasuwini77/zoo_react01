@@ -32,6 +32,22 @@
   text-decoration: underline;
 }
 
+.closeButton2 {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.contentImg {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .modal {
     padding: 10px;

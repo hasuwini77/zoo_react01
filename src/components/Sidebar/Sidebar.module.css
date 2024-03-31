@@ -1,6 +1,7 @@
 .sidebar {
   flex: 1;
   min-width: 200px;
+  max-width: 250px;
   background-color: #5f1f5e;
   overflow-y: auto;
   color: white;

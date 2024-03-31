@@ -1,10 +1,27 @@
 import React from "react";
 import styles from "./MammalsContent.module.css";
 import { getImageURL } from "../../utils/functions";
+import { useState } from "react";
+import AnimalModal from "../AnimalModal";
 
 const MammalsContent = ({ userHasClicked, currentAnimal }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleImageError = () => {
     console.log("Image not found!");
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const animalGroupClick = () => {
+    const groupUrl = `/${currentAnimal.group}`;
+    window.location.href = groupUrl;
   };
 
   return (
@@ -21,10 +38,13 @@ const MammalsContent = ({ userHasClicked, currentAnimal }) => {
             <p className={styles.length}>Length: {currentAnimal.length} </p>
             <p className={styles.lifespan}>Typically lives: {currentAnimal.lifespan} </p>
             <div className={styles.buttonContainer}>
-              <button> {currentAnimal.group} </button>
-              <button> Read More </button>
+              <button onClick={animalGroupClick}> {currentAnimal.group} </button>
+              <button className={styles.linkButton} onClick={openModal}>
+                Read More
+              </button>
             </div>
           </div>
+          {isModalOpen && <AnimalModal currentAnimal={currentAnimal} onClose={closeModal} />}
         </>
       )}
       {userHasClicked && !currentAnimal && <p>No animal details available.</p>}
