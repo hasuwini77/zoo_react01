@@ -8,7 +8,7 @@ const BirdsContent = ({ userHasClicked, currentAnimal }) => {
   };
 
   return (
-    <div className={styles.mammalsContent}>
+    <div className={styles.birdsContent}>
       {!userHasClicked && <h1> Welcome On the Bird's Page!</h1>}
       {userHasClicked && currentAnimal && (
         <>

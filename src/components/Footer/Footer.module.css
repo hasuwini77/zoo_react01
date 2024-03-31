@@ -4,4 +4,6 @@
   align-items: center;
   height: 15vh;
   background-color: #efb3f4;
+  position: sticky;
+  bottom: 0;
 }
